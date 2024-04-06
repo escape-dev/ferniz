@@ -1,0 +1,1 @@
+# Practice how to styling with tailwindcss and using the rails html erb
