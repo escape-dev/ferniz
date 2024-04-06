@@ -12,19 +12,21 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <nav class="flex flex-1 justify-between">
+    <main>
+      <nav class="bg-glass px-20 flex flex-1 py-8 items-center justify-between absolute z-50">
         <a>Ferniz</a>
-         <ul class="flex">
-           <li>Home</li>
-           <li>Service</li>
-           <li>Pricing</li>
-           <li>About</li>
-           <li>Contact</li>
+        <ul class="flex gap-12">
+          <li>Home</li>
+          <li>Service</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
          </ul>
         <button>Request A Demo</button>
       </nav>
+      
       <%= yield %>
+      
     </main>
   </body>
 </html>

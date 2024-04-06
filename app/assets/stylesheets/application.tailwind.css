@@ -11,3 +11,14 @@
 }
 
 */
+
+@layer components {
+  .bg-glass {
+    @apply w-full bg-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-b border-[#B9B9B9]
+  }
+
+  .bg-hero {
+    background-image: url(hero-image.png) !important;
+    background-position-y: top;
+  }
+}
