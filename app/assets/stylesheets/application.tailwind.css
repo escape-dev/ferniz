@@ -21,4 +21,16 @@
     background-image: url(hero-image.png) !important;
     background-position-y: top;
   }
+
+  h1 {
+    @apply font-semibold text-6xl text-black
+  }
+
+  h4 {
+    @apply font-semibold text-4xl
+  }
+
+  h5 {
+    @apply font-medium text-lg
+  }
 }
