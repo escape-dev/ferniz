@@ -27,32 +27,78 @@
       
       <%= yield %>
 
-      <footer class="px-20 pt-20 pb-8 bg-[#F5FF80]">
-        <div class="flex justify-between">
+      <footer class="pb-8 bg-[#F5FF80]">
+        <div class="flex flex-col gap-12 px-20 bg-footer bg-cover py-44">
+          <div class="flex flex-col gap-5">
+            <h2 class="text-white text-center">Ready to Strengthen Your Cybersecurity?</h2>
+            <p class="text-center text-[#D1D1D0]">Explore Ferniz's Comprehensive Cybersecurity Solutions</p>
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <button class="flex justify-center items-center gap-2 font-semibold rounded-full px-6 py-4 bg-[#F5FF80]">
+              Get Started 
+              <%= render partial: "icons/right_arrow" %>
+            </button>
+            <button class="font-semibold px-6 py-4 text-white bg-black border border-white rounded-full">Request A Demo</button>
+          </div>
+        </div>
+        <div class="flex justify-between px-20 mt-20">
           <div class="flex flex-col gap-12">
             <div class="flex flex-col gap-4">
               <h4>Ferniz</h4>
-              <div>
+              <div class="text-base font-normal">
                 <p>Your cybersecurity partner with tailored solutions for</p>
                 <p>Manufacturing, Healthcare, Finance, Retail, and Defense</p>
               </div>
             </div>
-            <div>
+            <div class="flex flex-col gap-3">
               <h5>Connect with Us</h5>
+              <div class="flex gap-3">
+                <%= render partial: "icons/instagram" %>
+                <%= render partial: "icons/linkedin" %>
+                <%= render partial: "icons/twitter" %>
+                <%= render partial: "icons/comunity" %>
+              </div>
             </div>
           </div>
-          <div>
-            <h5>Quick Links</h5>
+          <div class="flex flex-col gap-4">
+            <h5>Quick Links<h5>
+            <ul class="flex flex-col gap-3 font-normal text-base">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Contact</a></li>
+              <li><a>Projects</a></li>
+            </ul>
           </div>
-          <div>
+          <div class="flex flex-col gap-4">
             <h5>Services</h5>
+            <ul class="flex flex-col gap-3 font-normal text-base">
+              <li><a>Data Privacy</a></li>
+              <li><a>Endpoint Security</a></li>
+              <li><a>Identity & Access Management</a></li>
+              <li><a>Insider Threat Detection</a></li>
+              <li><a>System Risk Management</a></li>
+              <li><a>Enterprise Architecture</a></li>
+            </ul>
           </div>
-          <div>
+          <div class="flex flex-col gap-4">
             <h5>Contact Information</h5>
+            <ul class="flex flex-col gap-3 font-normal text-base">
+              <li>123 Main Street, Suite 456</li>
+              <li>+1 (123) 456-7890</li>
+              <li>support@ferniz.com</li>
+            </ul>
           </div>
         </div>
-        <div>
-
+        <hr class="border-b border-black mx-20 my-8">
+        <div class="px-20 flex justify-between font-normal text-lg">
+          <p>Copyright &copy; 2023 Ferniz, Inc. All rights reserveds</p>
+          <ul class="flex gap-6">
+            <li>Sitemap</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Faqs</li>
+          </ul>
         </div>
       </footer>
     </main>

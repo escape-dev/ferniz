@@ -22,8 +22,16 @@
     background-position-y: top;
   }
 
+  .bg-footer {
+    background-image: url(footer-image.png) !important;
+  }
+
   h1 {
     @apply font-semibold text-6xl text-black
+  }
+
+  h2 {
+    @apply font-semibold text-5xl text-black
   }
 
   h4 {
@@ -31,6 +39,6 @@
   }
 
   h5 {
-    @apply font-medium text-lg
+    @apply font-medium text-lg text-black
   }
 }
