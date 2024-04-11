@@ -10,8 +10,23 @@
     </button>
   </div>
 </div>
-<section>
+<section class="flex flex-col gap-12 px-20">
   <h2 class="text-center">Powerful Cybersecurity Features</h2>
+  <div class="grid grid-cols-2 gap-5">
+    <% @features.each do |feature| %>
+      <div class="p-6 border-[0.5px] border-[#A2A2A2] rounded-3xl">
+        <h3 class="flex gap-3 mb-3 items-center font-medium text-xl">
+          <span><%= render partial: "icons/#{feature[:icon]}" %></span>
+          <%= feature[:title] %>
+        </h3>
+        <p class="font-normal text-lg"><%= feature[:description] %></p>
+        <button class="flex justify-center items-center gap-2 border-[0.8px] border-black font-semibold text-xl rounded-full mt-12 px-6 py-4">
+              Get Started 
+              <%= render partial: "icons/right_arrow" %>
+            </button>
+      </div>
+    <% end %>
+  </div>
 </section>
 <section class="flex px-20 py-20 bg-[#F5FF80] gap-12">
   <%= image_tag "content-image.png", alt: "content", class: "h-full object-cover" %>
