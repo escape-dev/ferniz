@@ -1,2 +1,2 @@
-# Practice how to styling with tailwindcss and using the rails html erb
+# Ruby and TailwindCSS
 ## Colaborate with my friend who create this design [yohanes yuda](https://github.com/yohanesyuda)
